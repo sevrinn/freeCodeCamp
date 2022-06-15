@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Vibe Check Survey</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Vibe Check!</h1>
+    <p id="description">This here is a little survey to check ur vibe</p>
+    <form id="survey-form">
+      <fieldset class="form-section" id="general-info">
+        <legend>General Info</legend>
+        <label id="name-label">
+          Name:
+          <input id="name" type="text" placeholder="Enter your name" required/>
+        </label>
+
+        <label id="email-label">
+          Email:
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        </label>
+        <label id="number-label">
+          Energy Level (1 is low, 10 is high):
+          <input id="number" type="number" placeholder="Enter your energy level" min=1 max=10 />
+        </label>
+      </fieldset>
+      <fieldset id="vibe" class="form-section">
+        <legend>Your Vibe</legend>
+        <label id="dropdown-label">
+          How are you feeling in the moment?
+          <select id="dropdown">
+            <option value="">(select one...)</option>
+            <option value="great">I feel great! xD</option>
+            <option value="okay">I'm okay :)</option>
+            <option value="meh">Meh... :/</option>
+            <option value="been better">I've been better -_-</option>
+            <option value="not good">Not good :'(</option>
+          </select>
+        </label>
+        <p>Have you eaten recently?</p>
+        <label id="has-eaten-label">
+          Yes
+          <input type="radio" name="eaten" value="yes"/>
+        </label>
+        <label id="not-eaten-label">
+          No
+          <input type="radio" name="eaten" value="no"/>
+        </label>
+        <p>What do you need and want right now?</p>
+        <label id="water-label">
+          Water
+          <input type="checkbox" value="water">
+        </label>
+        <label id="snack-label">
+          A Snack
+          <input type="checkbox" value="snack">
+        </label>
+        <label id="hug-label">
+          A Hug
+          <input type="checkbox" value="hug">
+        </label>
+        <label id="nap-label">
+          A nap
+          <input type="checkbox" value="nap">
+        </label>
+        <label id="textarea-label">
+          Anything else you wanna get out?
+          <textarea id="comments" rows=5 cols=33></textarea>
+        </label
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+
+

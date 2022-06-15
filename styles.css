@@ -1,0 +1,122 @@
+body {
+	margin: 1em 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tahoma, sans-serif;
+	background-color: #2e294e;
+	color: #d90368;
+}
+
+#title,
+#description {
+	text-align: center;
+}
+
+#description {
+	color: #ffd400;
+}
+
+#survey-form {
+	padding: 1em;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.form-section {
+	padding: 1em;
+	border-color: #ffd400;
+	margin: 1em 0;
+}
+
+#general-info label,
+#vibe label {
+	display: block;
+	margin: 0.8em auto;
+}
+input,
+select,
+option,
+textarea {
+	padding: 0.2em;
+}
+#general-info input,
+#vibe select,
+#comments {
+	display: block;
+	width: 100%;
+	height: 2em;
+	background-color: #ffd400;
+	border: 1px solid #ffd400;
+	border-radius: 2px;
+	color: #2e294e;
+	margin: 5px 0;
+}
+
+/*This is how you get custom radio buttons*/
+input[type='radio']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #ffd400;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #ffd400;
+}
+input[type='radio']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d90368;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #ffd400;
+}
+/*This is how you set custom checkboxes*/
+input[type='checkbox']:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #ffd400;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #ffd400;
+}
+input[type='checkbox']:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d90368;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid #ffd400;
+}
+
+#comments {
+	height: 5em;
+	max-height: 7em;
+}
+
+input[type='submit'] {
+	display: block;
+	background-color: #ffd400;
+	height: 2em;
+	border: 1px solid #ffd400;
+	border-radius: 2px;
+	margin: 0 auto;
+}
